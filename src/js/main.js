@@ -8,8 +8,17 @@ window.addEventListener('DOMContentLoaded', () => {
   const slider = new MainSlider({btns: '.next', container: '.page'});
   slider.render();
 
+  const modulePageSlider = new MainSlider({
+    container: '.moduleapp',
+    btns: '.next',
+    next: '.nextmodule',
+    prev: '.prevmodule'
+  });
+  modulePageSlider.render();
+
   const showUpSlider = new MiniSlider({
     container: '.showup__content-slider',
+    btns: '.showup__content-slider .card__controls-arrow',
     prev: '.showup__prev',
     next: '.showup__next',
     activeClass: 'card-active',
@@ -19,6 +28,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const modulesSlider = new MiniSlider({
     container: '.modules__content-slider',
+    btns: '.modules__content-slider .card__controls-arrow',
     prev: '.modules__info-btns .slick-prev',
     next: '.modules__info-btns .slick-next',
     activeClass: 'card-active',
