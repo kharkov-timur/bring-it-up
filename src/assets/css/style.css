@@ -1157,6 +1157,10 @@ a:active {
   -webkit-appearance: none
 }
 
+.join__evolution .form__block div select option {
+  color: #000;
+}
+
 .join__evolution .form__block div input {
   width: 340px;
   height: 64px;
@@ -1413,13 +1417,13 @@ a:active {
   border-radius: 8px;
   background-color: #fff;
   padding: 32px 40px 50px 40px;
-  transition: .5s all
+  transition: .5s width;
 }
 
 .feed__item-active hr {
   display: block;
   margin-top: 20px;
-  opacity: .2
+  opacity: .2;
 }
 
 .feed__item-active .feed__item-info {
@@ -1917,7 +1921,8 @@ a:active {
   padding: 15px 18px 17px 18px;
   display: flex;
   justify-content: center;
-  height: 48px
+  height: 48px;
+  cursor: pointer;
 }
 
 .module__info-book .download svg {
